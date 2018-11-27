@@ -2,11 +2,11 @@
 
 A web app development practice from michaelliao's python course.
 
-根据 [廖雪峰 Python 教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432170876125c96f6cc10717484baea0c6da9bee2be4000) 进行的练习项目，实现一个 MVC 架构博客站点。
+根据 [廖雪峰 Python 教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432170876125c96f6cc10717484baea0c6da9bee2be4000) 进行的练习项目，实现一个 MVC 架构博客站点。
 
-* 通过 jinja2 实现前端模板，就可以根据 http 请求返回相应的 html 页面。
-* 该 web 应用通过异步的方式处理 http 请求，因此，对底层库 aiohttp 进行封装，实现一个 web 应用框架。
-* 再由 aiohttp 和 aiomysql 实现 ORM 框架，以便通过 Python 的类来操作 MySQL 数据库。
+* 通过 jinja2 实现前端模板，就可以根据 http 请求返回相应的 html 页面。
+* 该 web 应用通过异步的方式处理 http 请求，因此，对底层库 aiohttp 进行封装，实现一个 web 应用框架。
+* 再由 aiohttp 和 aiomysql 实现 ORM 框架，以便通过 Python 的类来操作 MySQL 数据库。
 * 基于以上实现的框架进行 web 应用的业务功能开发，主要是用户管理和博文管理。
 
 ## Day 1 - build a development environment
@@ -20,13 +20,13 @@ A web app development practice from michaelliao's python course.
 * [Simple Python Version Management: pyenv](https://github.com/pyenv/pyenv) - 看 README file 进行安装和使用
 
 ```bash
-# 查看可安装的 Python 版本
+# 查看可安装的 Python 版本
 pyenv install --list
 
 # 安装 Python 3.7.1
 pyenv install 3.7.1
 
-# 在项目路径指定 Python 版本
+# 在项目路径指定 Python 版本
 cd /path/to/your/project
 pyenv local 3.7.1
 ```
@@ -41,7 +41,7 @@ pyenv local 3.7.1
 * [Advanced Usage of Pipenv](https://pipenv.readthedocs.io/en/latest/advanced/#configuration-with-environment-variables) - 结合环境变量设置来使用 pipenv
 
 ```bash
-# 创建虚拟环境，并生成依赖管理文件 Pipfile 和 Pipfile.lock
+# 创建虚拟环境，并生成依赖管理文件 Pipfile 和 Pipfile.lock
 pipenv --python 3.7.1
 
 # 编辑 Pipfile 文件，将第三方库源换成清华源
@@ -61,7 +61,7 @@ pipenv install aiohttp jinja2 aiomysql
 
 相关资料：
 
-* [如何选择开源许可证？](http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html)
+* [如何选择开源许可证？](http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html)
 * [FreeBSD License](https://en.wikipedia.org/wiki/BSD_licenses)
 
 ```text
@@ -82,7 +82,7 @@ LICENSE
 ```bash
 git init
 
-# 创建 .gitignore 文件，参考 python.gitignore, 忽略无需关注的文件
+# 创建 .gitignore 文件，参考 python.gitignore, 忽略无需关注的文件
 
 # 添加当前目录以及子目录中所有未被 .gitignore 包括的文件
 
@@ -96,6 +96,6 @@ git commit -m "Day 1 - build a development environment"
 # 关联 GitHub 仓库
 git remote add origin git@github.com:justoneliu/web_app.git
 
-# 将代码推送到 GitHub
+# 将代码推送到 GitHub
 git push origin master
 ```

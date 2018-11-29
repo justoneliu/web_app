@@ -1,4 +1,4 @@
-# Web 应用开发：博客站点
+# Web 开发札记：博客站点
 
 根据 [廖雪峰 Python 教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432170876125c96f6cc10717484baea0c6da9bee2be4000) 进行的练习项目，实现一个 MVC 架构的博客站点。
 
